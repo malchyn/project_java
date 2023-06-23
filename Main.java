@@ -62,12 +62,12 @@ public class Main {
         }
 
         if (a != b && a > b) {
-            // Код буде виконано, якщо і перша, і друга умова
+            // Код буде виконано, якщо і перша і друга умова
 
         }
 
         if (a < b || a == b) {
-            // Код буде виконано, якщо або перша, або друга умова
+            // Код буде виконано, якщо або перша або друга умова
 
         }
          */
@@ -147,10 +147,6 @@ public class Main {
         */
         // While, for, do while
         /*
-        for (int i = -200; i < 0; i += 2)
-            System.out.println(i);
-
-
         int j = 1;
 
         while (j <= 10) {
@@ -164,18 +160,19 @@ public class Main {
             System.out.println(x);
         } while (x > 10);
 
-        for (int i = 10; i <= 20; i++)
-            System.out.println(i * i);
-            */
-        /*
+
+        for (int i = 100; i > 10; i/=2)
+            System.out.println(i);
+
          byte j = 100;
          for (int i = 0; i < 10; i++) {
              if (i == 5)
                  break; // return
              System.out.println(i);
+         }
 
-         */
-        /*
+        // I don't realized what i write
+
         int a = 100;
         do {
              a = a / 2;
@@ -191,8 +188,9 @@ public class Main {
          } while (a < 1935);
 
         */
-        //Array
 
+        //Array
+        /*
         int[] num = new int[4];
         num[0] = 21;
         num[1] = 2;
@@ -204,11 +202,37 @@ public class Main {
         char[] stroka;
         int[] nums2 = new int[] { 1, 2, 3, 4 };
         System.out.println(nums2[1]);
+        */
+        /*
+        int[] a = new int[] {-14, 23, 9, -4, 12, -1};
+        int min = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < min)
+                min = a[i];
+        }
+        System.out.println("Min element: " + min);
+        */
+        /*
+        float[] num = new float[] {5.0f, 6.45f, 89.984f};
+        for(int i = 0; i < num2.length; i++) {
+                System.out.println("Element: " + num[i]);
+        }
+        */
+        double[][] number = new double[][] {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}}; // multidimensional array
 
-        int[] numbers = new int[] { 1, 7, 3, 5, 2, 6, 4 };
-        Arrays.sort(numbers);
-        System.out.println(numbers);
-
-
+        System.out.println(number[1][0]);
+        String[][] s = new String[1][2];
+        s[0][0] = "Hello";
+        s[0][1] = "World";
+        System.out.println(s[0][0] + " " + s[0][1] + "!!!");
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[i].length; j++) {
+                System.out.print(s[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
