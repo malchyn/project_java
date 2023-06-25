@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
         // data type, text
@@ -30,7 +32,7 @@ public class Main {
         int num = scan.nextInt();
         */
 
-        // Calculator v 1.0 blyat p.s My first normal code, da ny nachyi!!!
+        // Calculator v 1.0 p.s My first normal code!!!
         /*
         Scanner scan = new Scanner(System.in);
         System.out.println("This first number: ");
@@ -62,12 +64,12 @@ public class Main {
         }
 
         if (a != b && a > b) {
-            // Код буде виконано, якщо і перша, і друга умова
+            // Код буде виконано, якщо і перша і друга умова
 
         }
 
         if (a < b || a == b) {
-            // Код буде виконано, якщо або перша, або друга умова
+            // Код буде виконано, якщо або перша або друга умова
 
         }
          */
@@ -147,10 +149,6 @@ public class Main {
         */
         // While, for, do while
         /*
-        for (int i = -200; i < 0; i += 2)
-            System.out.println(i);
-
-
         int j = 1;
 
         while (j <= 10) {
@@ -164,18 +162,19 @@ public class Main {
             System.out.println(x);
         } while (x > 10);
 
-        for (int i = 10; i <= 20; i++)
-            System.out.println(i * i);
-            */
-        /*
+
+        for (int i = 100; i > 10; i/=2)
+            System.out.println(i);
+
          byte j = 100;
          for (int i = 0; i < 10; i++) {
              if (i == 5)
                  break; // return
              System.out.println(i);
+         }
 
-         */
-        /*
+        // I don't realized what i write
+
         int a = 100;
         do {
              a = a / 2;
@@ -191,8 +190,9 @@ public class Main {
          } while (a < 1935);
 
         */
-        //Array
 
+        //Array
+        /*
         int[] num = new int[4];
         num[0] = 21;
         num[1] = 2;
@@ -204,11 +204,74 @@ public class Main {
         char[] stroka;
         int[] nums2 = new int[] { 1, 2, 3, 4 };
         System.out.println(nums2[1]);
+        */
+        /*
+        int[] a = new int[] {-14, 23, 9, -4, 12, -1};
+        int min = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < min)
+                min = a[i];
+        }
+        System.out.println("Min element: " + min);
+        */
+        /*
+        float[] num = new float[] {5.0f, 6.45f, 89.984f};
+        for(int i = 0; i < num2.length; i++) {
+                System.out.println("Element: " + num[i]);
+        }
 
-        int[] numbers = new int[] { 1, 7, 3, 5, 2, 6, 4 };
-        Arrays.sort(numbers);
-        System.out.println(numbers);
+        double[][] number = new double[][] {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}}; // multidimensional array
 
+        System.out.println(number[1][0]);
+        String[][] s = new String[1][2];
+        s[0][0] = "Hello";
+        s[0][1] = "World";
+        System.out.println(s[0][0] + " " + s[0][1] + "!!!");
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[i].length; j++) {
+                System.out.print(s[i][j] + " ");
+            }
+            System.out.println();
+        }
 
+         */
+        // ArrayList
+        /*
+        ArrayList<Float> numbers = new ArrayList<>();
+        numbers.add(11.83f);
+        float num1 = 1.34f;
+        numbers.add(num1);
+        numbers.add(1, 13.5f);
+        numbers.remove(0);
+        // System.out.println(numbers.size());
+        // numbers.clear();
+        // System.out.println(numbers.isEmpty());
+        numbers.set(1, 4.6f);
+        // Float[] num2 = (Float[])numbers.toArray();
+        for (float num: numbers) {
+            System.out.println(num);
+        }
+
+         */
+        //ArrayLinkedList
+        /*
+        LinkedList<String> numbers = new LinkedList<>();
+        numbers.add(0, "Hello");
+        numbers.add(1, "World");
+        numbers.add(2, "!!!");
+        System.out.print(numbers.getFirst());
+        System.out.print(" ");
+        System.out.print(numbers.get(1));
+        System.out.print(numbers.getLast());
+        // numbers.removeLast();
+        // numbers.removeFirst();
+        for (String num: numbers) {
+            System.out.println(num);
+        }
+
+         */
     }
 }
